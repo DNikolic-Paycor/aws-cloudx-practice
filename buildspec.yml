@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - sam package --s3-bucket dragan-nikolic-bucket1 --template-file template.yaml --output-template-file outputSamTemplate.yml
+      - sam package --s3-bucket dragan-nikolic-bucket1 --template-file template.yaml --output-template-file outputTemplate.yml
       - ls -la build/libs
 artifacts:
   files:
